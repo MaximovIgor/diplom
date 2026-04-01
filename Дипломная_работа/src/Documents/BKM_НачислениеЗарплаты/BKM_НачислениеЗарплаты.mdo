@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cac464d9-c231-4254-a193-57617a76eba9">
+  <producedTypes>
+    <objectType typeId="46290305-6fe0-48fc-b57d-a492ee9e9ee1" valueTypeId="4a8ac617-3c0b-4698-8381-35c4beae7186"/>
+    <refType typeId="f939e0d1-ce84-478f-8480-7f60ca069e1c" valueTypeId="d0bb5b9a-1946-48f7-9718-c0724d5a6864"/>
+    <selectionType typeId="72921a00-8d63-4e0d-866a-c8c1c8583f49" valueTypeId="a85af321-464c-4529-98da-0c2d19406ccb"/>
+    <listType typeId="56beeccd-13ff-4c79-b9a2-bd49502903fc" valueTypeId="72e92541-de9c-4033-bad0-67e6b0ad391c"/>
+    <managerType typeId="99112691-67fd-4ea8-b0c2-e6cec58ba8f0" valueTypeId="096ce8ef-3230-46b7-beee-78404e50123c"/>
+  </producedTypes>
+  <name>BKM_НачислениеЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>начисление зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.BKM_НачислениеЗарплаты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Начисление зарплаты №%Номер% от %Дата%</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Начисления зарплаты</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.BKM_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.BKM_НачислениеЗарплаты.Form.ФормаСписка</defaultListForm>
+  <registerRecords>AccumulationRegister.BKM_ВзаиморасчетыССотрудниками</registerRecords>
+  <registerRecords>CalculationRegister.BKM_ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.BKM_Удержания</registerRecords>
+  <registerRecords>CalculationRegister.BKM_ДополнительныеНачисления</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="13c7dd7c-8622-4f5d-a818-2007ece87e5c">
+    <name>BKM_ПериодНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>период начисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e234a5d6-7c93-4aab-936a-bef1c4ad9a60">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a4cb312f-bec8-4fac-b2de-fe625363ab99">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="389d629a-3c46-4a9a-bf6e-690ee6b83d76">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7e6e3614-c122-42e4-ae35-80dd2cf3dba8">
+    <producedTypes>
+      <objectType typeId="f5a1ac7c-ca33-47a8-a659-de9cf74f6390" valueTypeId="10fdeb45-4fc3-488d-9f4a-4664889ad401"/>
+      <rowType typeId="f62b68dc-4ccf-4e8e-b5c4-6b935c6b6630" valueTypeId="58d65587-5c6f-46e5-987f-3a3e997abdd4"/>
+    </producedTypes>
+    <name>BKM_Начисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>начисления</value>
+    </synonym>
+    <attributes uuid="346df2d3-4844-4faf-b5a6-ef775af4f02c">
+      <name>BKM_СуммаОклада</name>
+      <synonym>
+        <key>ru</key>
+        <value>сумма оклада</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5d1f540c-a64d-4e4e-9108-54c6744e1c51">
+      <name>BKM_СуммаПроцент</name>
+      <synonym>
+        <key>ru</key>
+        <value>сумма процент</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="834c0df1-0c8b-4419-bf9e-44da45d5d1b6">
+      <name>BKM_СуммаОтпускных</name>
+      <synonym>
+        <key>ru</key>
+        <value>сумма отпускных</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="33a7912a-c8b1-481e-9e81-d8c0d94b5d87">
+      <name>BKM_СуммаНачислено</name>
+      <synonym>
+        <key>ru</key>
+        <value>сумма начислено</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a678f01-dcf7-40ee-aa40-c8998d91ee17">
+      <name>BKM_НДФЛ</name>
+      <synonym>
+        <key>ru</key>
+        <value>НДФЛ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="892dabfe-3107-4dc6-ae3a-0146a31e0e7b">
+      <name>BKM_КВыплате</name>
+      <synonym>
+        <key>ru</key>
+        <value>к выплате</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="74b39a2f-2c9a-4c6e-8b80-a06ea1e9d05d">
+      <name>BKM_Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>сотрудник</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

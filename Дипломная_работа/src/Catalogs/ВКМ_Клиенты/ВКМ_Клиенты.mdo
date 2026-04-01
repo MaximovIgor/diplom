@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81afe49e-df83-4f4f-a83e-4e8c150d6782">
+  <producedTypes>
+    <objectType typeId="4ee54b9b-0a29-409b-b193-89810b971483" valueTypeId="2c890b66-a843-41b9-99da-b1398dc773cc"/>
+    <refType typeId="5fdd364b-0065-43d9-a264-7412d9c05556" valueTypeId="4ff055c4-3b77-4f1b-8117-06d1aeb9566d"/>
+    <selectionType typeId="54dc379e-5d24-4e18-9ee9-0758b87fcaf4" valueTypeId="8990c212-9da4-41b2-886f-6397499a31d8"/>
+    <listType typeId="e87cfa23-9eeb-4905-922c-8bc05c385d88" valueTypeId="224fb88e-9c9a-45ec-a773-d6a0b498bd5c"/>
+    <managerType typeId="c912c8f1-abe8-4c89-8122-f6d871333860" valueTypeId="660042be-bb2c-453b-b5fb-54c080ea4e55"/>
+  </producedTypes>
+  <name>ВКМ_Клиенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Клиенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_Клиенты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВКМ_Клиенты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Наименование</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Наименование</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="2d15698a-ce4e-4b28-a809-21d991890a98">
+    <name>ВКМ_Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e3f18354-9ef9-4bf0-8e7f-dede01702f53">
+    <name>ВКМ_Почта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

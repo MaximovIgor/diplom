@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05bed6e4-7289-41f9-8d36-a92d191e5969">
+  <producedTypes>
+    <selectionType typeId="594ca1e8-19ce-45e0-8b7b-584cce6506a9" valueTypeId="1ea59000-58ea-4b86-b7c9-1202c0fbd308"/>
+    <listType typeId="70cc8a15-6884-4bc2-a0ac-ab00efa6c0c8" valueTypeId="30588faa-b885-44a0-9dfa-03c04b5fd28e"/>
+    <managerType typeId="fb0f83f5-a318-4371-a231-3da6b3eeaf3f" valueTypeId="55f8f153-be18-4582-ab0b-a8c5691d541b"/>
+    <recordSetType typeId="56237c66-2ab1-4053-8ca3-0b415ba4fc9c" valueTypeId="3e21a73d-2139-498b-83ae-953a88ed4db8"/>
+    <recordKeyType typeId="5e0e2f25-fad3-415e-b8fe-2f6b664d53d8" valueTypeId="936de398-0506-49f5-b46b-88e720fd2a88"/>
+    <recordType typeId="bbee576a-3be0-4411-8564-799af1aa1e48" valueTypeId="f039cbb1-5af6-4a35-8e92-d6ec0fdfbee8"/>
+    <recordManagerType typeId="42bf55ec-d0d0-4086-a10f-3354dbd6551f" valueTypeId="30c1bcdb-ae9f-48b2-b1a3-059a11d3eb31"/>
+  </producedTypes>
+  <name>ВКМ_ОчередьУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ очередь уведомлений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fd267662-21d9-4e4c-a06f-491727432e37">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3dff6794-5e06-44b1-818c-2c9ea4ee2dca">
+    <name>ИдентификаторЧата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор чата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="2e4619e4-59d0-4472-b40d-9c0c558d62f8">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

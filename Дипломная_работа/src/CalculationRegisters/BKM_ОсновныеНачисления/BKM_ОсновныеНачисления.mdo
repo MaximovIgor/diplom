@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abdbfc92-3f63-4c48-aa48-dd70dabe2e7c">
+  <producedTypes>
+    <selectionType typeId="ea6e1191-9941-4131-96af-86412efd1c87" valueTypeId="442d0dc8-c322-4c2c-be72-e90e61ad0ed0"/>
+    <listType typeId="531f9884-ab0f-40dd-9691-9c5e1dbb20fa" valueTypeId="52c27826-17c3-4819-aded-47a767eceafe"/>
+    <managerType typeId="c83e9f58-d675-4df8-8193-2dd2a6df88ef" valueTypeId="1adf958d-af92-4611-a28d-e486cd2ec806"/>
+    <recordSetType typeId="d7f478ed-9f3f-4394-b6ca-0301f999dec5" valueTypeId="ccc325c9-611d-4b4c-b26a-2cabe381c339"/>
+    <recordKeyType typeId="2bb2bd7d-6f2c-412a-9559-5b399a438900" valueTypeId="3ec47a72-0f91-4b8e-a584-8a2ffe34fe56"/>
+    <recordType typeId="a41600cf-0863-4a6f-a14b-28788395cd77" valueTypeId="e94b8077-e144-4756-9123-5e792d23331e"/>
+    <recalcsType typeId="559344c0-9ea4-4d76-9326-b18666c02c45" valueTypeId="7193380c-a3e9-4fb8-b947-87ae070cf53c"/>
+  </producedTypes>
+  <name>BKM_ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>основные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.BKM_ОсновныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9eb4c935-1e8a-4aad-b253-5c2669f77022">
+    <name>BKM_Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="ea86be53-947c-4ba4-b07b-b49f8daeb552">
+    <name>BKM_Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>

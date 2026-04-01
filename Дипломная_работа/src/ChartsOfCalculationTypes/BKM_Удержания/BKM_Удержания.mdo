@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ce45d1c-a509-4b62-908e-e1f496b2a826">
+  <producedTypes>
+    <objectType typeId="9de07de6-a03d-4cc3-a5e6-aaa327fd7fff" valueTypeId="d293e4a5-fe82-4184-bc40-907590343d2b"/>
+    <refType typeId="1833513e-64ff-4f49-96b9-0331aca99db9" valueTypeId="30b6c70f-068b-4e57-a076-55b0e497a279"/>
+    <selectionType typeId="79262e0e-64c5-4b80-9482-e80c56fcf5a1" valueTypeId="d5a09748-5ab7-48df-a395-e5ef9c5ed5d5"/>
+    <listType typeId="a4b4bf97-8820-4a59-a94a-3b1b1cf6270c" valueTypeId="41cf1481-f95a-4134-9fd6-8ca0fbb065a9"/>
+    <managerType typeId="eed784a2-66c1-4234-babb-394c018d38e3" valueTypeId="9bb4e25e-a1a0-489b-9518-2f270df6ff1d"/>
+    <displacingCalculationTypesType typeId="1656f0fa-1b8c-4ab9-b375-b87447e2f600" valueTypeId="f7a3c5d3-af9a-4c4f-8361-ecfea5380663"/>
+    <displacingCalculationTypesRowType typeId="199f29e4-67f0-45e5-a79e-b732587c88fa" valueTypeId="1a71e439-633e-4b27-8b30-2931cc92e814"/>
+    <baseCalculationTypesType typeId="ac54235d-d51b-445f-bc66-2d3bf31b1029" valueTypeId="f3e13e61-ce3c-42a6-8a48-a19b9a857edf"/>
+    <baseCalculationTypesRowType typeId="857c51bc-cace-42a9-bf82-05fc038ee6e3" valueTypeId="2a4944b2-d2ef-4375-910c-72f133685a4a"/>
+    <leadingCalculationTypesType typeId="dfda89e2-cba6-4704-ae6c-8412647fe582" valueTypeId="b447e589-cf8f-4a52-a118-e93479d8707f"/>
+    <leadingCalculationTypesRowType typeId="7d3316c4-0854-4afe-ac41-951761bca57d" valueTypeId="cf105674-399e-49cd-b8e5-355caec786fd"/>
+  </producedTypes>
+  <name>BKM_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.BKM_Удержания.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.BKM_Удержания.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Удержания</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Удержания</value>
+  </listPresentation>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCalculationTypes>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08fe190c-188a-4f1d-a1c2-eaaf74897127">
+  <name>ВКМ_ДиспетчерЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диспетчер заявок</value>
+  </synonym>
+</mdclass:Role>

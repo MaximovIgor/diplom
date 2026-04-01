@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67615b01-7cd4-4051-abeb-77d63699aaba">
+  <producedTypes>
+    <objectType typeId="769bc632-9943-4fef-94c1-6fe4bdab41f9" valueTypeId="35b8ffaa-b028-44de-9daa-8d888048f391"/>
+    <refType typeId="94347518-5108-408f-9426-a89d6e3b9f4c" valueTypeId="f0090533-00b3-4bad-a9bd-c1d1291e5d33"/>
+    <selectionType typeId="e89314b6-82d1-4468-a070-409eba1e52af" valueTypeId="27039e01-9830-4d66-ad29-fbd3a865f347"/>
+    <listType typeId="3c6872d5-86cc-461e-a8c5-bedceda90988" valueTypeId="e0850850-cfdd-4aae-a799-309df16d1abb"/>
+    <managerType typeId="7831eca9-b8f0-4b01-a142-f288c894cc3b" valueTypeId="0fefec6d-08fb-4e2c-a810-ffbd28402e06"/>
+  </producedTypes>
+  <name>ВКМ_НачислениеУпрЗП</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ начисление упр ЗП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_НачислениеУпрЗП.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>начисление упр ЗП</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>начисление упр ЗП</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8b8c522f-d8a3-4954-8ec5-84fcd01e28da">
+    <name>ВКМ_ПериодНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ период начисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ab00ae8-8acc-44be-a5de-eff92e7b79fc">
+    <name>ВКМ_Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25d42600-6c5d-48d5-b629-2c134df26caa">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4c73c67d-b0ea-48db-8770-220c359044d3">
+    <producedTypes>
+      <objectType typeId="53725b76-04a2-4437-b832-7502e49b864b" valueTypeId="6f437d7d-a541-4f1b-8014-5c2deb776125"/>
+      <rowType typeId="d5290639-2834-416f-b20a-42f9e65ca565" valueTypeId="b25f243b-fdb9-4427-871d-84612f4d3185"/>
+    </producedTypes>
+    <name>ВКМ_Начисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ начисления</value>
+    </synonym>
+    <attributes uuid="e4ef8120-ce97-4010-8207-9737f04d1f1e">
+      <name>ВКМ_Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8261b4cc-7db3-4a6e-94d0-eb15331a2ef1">
+      <name>ВКМ_Часы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часы</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d06babd3-cbf1-4caa-bd09-077a8eff73c0">
+      <name>ВКМ_Ставка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e5a90ae9-8c96-402d-beeb-0e38fa11a8ad">
+      <name>ВКМ_Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

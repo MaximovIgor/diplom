@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ec856fe-128a-41c1-8c63-7eaac7cfb13f">
+  <producedTypes>
+    <selectionType typeId="056ac26e-60e7-4a50-969a-c4ad8b53d02c" valueTypeId="180df98a-a178-4399-8cb0-3207a5986ba6"/>
+    <listType typeId="ac9258b7-dbf1-401d-9b7f-36638cad6d76" valueTypeId="9f8f62fe-536a-4c87-9672-00ea7aa092a6"/>
+    <managerType typeId="3118b3bb-54da-4a71-bf2c-86a4de46eb55" valueTypeId="bead33da-4d2a-4cc2-8791-23ab8646cc3c"/>
+    <recordSetType typeId="c4ca3ace-a795-46e7-8ca3-595e99cbba36" valueTypeId="5c673234-77f7-41bd-989c-e5dde4a46e6d"/>
+    <recordKeyType typeId="885f5d7d-be5f-41c3-b050-c1c7cea6505c" valueTypeId="9e58c12b-0226-4687-8b7e-1b39273cece8"/>
+    <recordType typeId="b4694368-c940-4ca6-9d34-18c60c97841b" valueTypeId="96d74735-776b-4fb9-8ab7-943b3404cb39"/>
+    <recordManagerType typeId="a11631cf-e56e-4a66-8ab4-595263c1127b" valueTypeId="f437af40-7a72-4024-b58b-e5f3483b9387"/>
+  </producedTypes>
+  <name>ВКМ_ИсторияСтатусовЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>История статусов заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>История статуса заявки</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>История статусов заявок</value>
+  </listPresentation>
+  <attributes uuid="81503451-60fb-4294-aed4-f83ea3ea89b7">
+    <name>ВКМ_Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВКМ_СтатусЗаявки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ef755a38-9c2b-4ff7-b8f4-ecbea3362886">
+    <name>ВКМ_Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="374aeffa-a092-4882-bdb8-4abb2f517532">
+    <name>ВКМ_ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1926bc87-db49-400a-bf3b-71f0768b40f1">
+    <name>ВКМ_Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2d74917b-87db-476c-a37a-ffa80001ff5c">
+    <name>ВКМ_Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВКМ_ЗаявкаКлиента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

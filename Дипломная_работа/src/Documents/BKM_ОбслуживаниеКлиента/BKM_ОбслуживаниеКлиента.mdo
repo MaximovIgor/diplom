@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30cb377b-1cd9-4649-9749-b402b12d7461">
+  <producedTypes>
+    <objectType typeId="555c2657-8657-498b-a0ad-6b80e35e84ab" valueTypeId="93f7a23f-012c-44f8-a276-42b097fa06a1"/>
+    <refType typeId="74f86198-12cb-4562-a4d6-ab704f746ad5" valueTypeId="9ffd50a7-e165-4eea-a294-6ff9f5befa74"/>
+    <selectionType typeId="e02efad4-be60-45f6-b1a6-9fdf89ebc4fe" valueTypeId="64edbb57-a46c-4586-8291-982d73c041ab"/>
+    <listType typeId="b944ad52-dffd-4f1f-a202-78f754b43010" valueTypeId="454cf9bc-2f7c-4efe-9b2c-7e38a47afe54"/>
+    <managerType typeId="b4520027-8421-4076-839c-c7d6b0ff371e" valueTypeId="5b6d0633-160c-4752-b991-442173d8e405"/>
+  </producedTypes>
+  <name>BKM_ОбслуживаниеКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>обслуживание клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.BKM_ОбслуживаниеКлиента.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Обслуживание клиента №%Номер% от %Дата%</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Обслуживание клиентов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.BKM_ВыполненныеКлиентуРаботы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="71ed8c5b-a9c9-474e-be74-8c5353f622a1">
+    <name>BKM_Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="724a82be-e45d-4f8b-b762-d74c3ecc9c84">
+    <name>BKM_Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>BKM договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УДАЛИТЬ_ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="abacc3f2-72bd-420f-a9fb-b9c919a974b6">
+    <name>BKM_Специалист</name>
+    <synonym>
+      <key>ru</key>
+      <value>специалист</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a181e853-6cf4-4f2e-87f8-fa8afeff4c62">
+    <name>BKM_ДатаРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>BKM дата работ</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="776f873f-88da-4c97-80c3-d5f5b170fdbb">
+    <name>BKM_ВремяНачалаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>время начала план</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="429b830d-253f-43f0-8a23-28366a3b0efb">
+    <name>BKM_ВремяОкончанияПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>время окончания план</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="98661941-a53e-4c37-a220-b69f2e96e7c1">
+    <name>BKM_ОписаниеПроблемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>описание проблемы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c22050f3-3abf-4efe-9535-7aa4d7285181">
+    <name>BKM_Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a9835dd-7fa4-4de7-8582-a8142c557512">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="aba88e5c-91e0-4dbd-9908-b16ff3bfa3cc">
+    <producedTypes>
+      <objectType typeId="9436222c-1714-466f-bb6a-9ec4208f6f41" valueTypeId="d2ee3059-66f6-4716-93e1-990e01e49576"/>
+      <rowType typeId="82c04787-2b47-4ef2-9945-539b5be003ab" valueTypeId="85982543-2d94-4f45-8ea5-23f68308cffa"/>
+    </producedTypes>
+    <name>BKM_ВыполненныеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>выполненные работы</value>
+    </synonym>
+    <attributes uuid="c58e3cd3-2fdd-46b4-bb36-a4f463459364">
+      <name>BKM_ОписаниеРабот</name>
+      <synonym>
+        <key>ru</key>
+        <value>описание работ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c3484905-0d85-48e3-a814-7761cf2a30f1">
+      <name>BKM_ФактЧасы</name>
+      <synonym>
+        <key>ru</key>
+        <value>факт часы</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="223cbcba-6c34-4ad3-bd7f-9a40bcbbe79d">
+      <name>BKM_ЧасыКОплате</name>
+      <synonym>
+        <key>ru</key>
+        <value>часы к оплате</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

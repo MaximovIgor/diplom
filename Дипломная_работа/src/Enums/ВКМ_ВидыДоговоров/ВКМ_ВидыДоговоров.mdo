@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b2e5de7-acbd-4f5e-a222-4786931c0c47">
+  <producedTypes>
+    <refType typeId="f06c2ae1-f1bd-4cf0-ab7b-9e926daea52a" valueTypeId="2b801582-9132-4b4a-941d-ee51016d9bcb"/>
+    <listType typeId="70184e4c-da3c-48fa-a068-2d69397337c8" valueTypeId="046e6664-376b-4f28-93b6-f1c670601699"/>
+    <managerType typeId="bddb85ac-8105-4ea9-98dd-922a8074df1b" valueTypeId="fbcf3aba-3ef9-4451-95df-fa9bbec07d7e"/>
+  </producedTypes>
+  <name>ВКМ_ВидыДоговоров</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ виды договоров</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d7fb8f6a-e8bd-4096-8478-78cbb62859e9">
+    <name>Абонентский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонентский</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c6e5ffb-17ae-4597-85bb-e5fe0f6015a8">
+    <name>Разовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разовый</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

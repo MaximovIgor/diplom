@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9df31b2c-6f0b-4369-b2fc-d54081ca7619">
+  <producedTypes>
+    <objectType typeId="072dee73-c301-49cb-b551-d491d941370b" valueTypeId="b8d2cb15-0ef1-40a1-bb43-a0d7da69196f"/>
+    <refType typeId="40db9c84-6652-4c17-934f-f398d9472739" valueTypeId="c66ddbf1-214f-41b7-ad10-fd9e8cc549df"/>
+    <selectionType typeId="d05ab841-4b8d-4bc8-9ae3-9946ad1c0ed2" valueTypeId="7ad145a0-a8c1-4454-8a1f-f9b4826a3fc4"/>
+    <listType typeId="04bbe0e7-d764-4e56-a58f-b48cdac0e96f" valueTypeId="c19ae37d-423f-4b00-8de8-921e114235d2"/>
+    <managerType typeId="26892ee3-c865-49e5-aaac-5cbca0702df4" valueTypeId="e7168550-dc32-4afa-b0bf-878c340dd8ad"/>
+  </producedTypes>
+  <name>BKM_ВыполненныеСотрудникомРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>выполненные сотрудником работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.BKM_ВыполненныеСотрудникомРаботы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Работы сотрудника №%Номер% от %Дата%</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выполненные сотрудником работы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.BKM_ВыполненныеСотрудникомРаботы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="ea04ff31-73b5-4185-ac75-1bd614cbb5ec">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

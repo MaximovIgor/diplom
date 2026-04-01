@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf43995a-03de-45f2-910e-e4d39437cb09">
+  <name>BKM_ДобавленныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>BKM добавленные объекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВКМ_ЗаявкаКлиента</content>
+  <content>Catalog.ВКМ_Клиенты</content>
+  <content>InformationRegister.ВКМ_ИсторияСтатусовЗаявок</content>
+  <content>Role.ВКМ_ДиспетчерЗаявок</content>
+  <content>Role.ВКМ_Инженер</content>
+  <content>Role.ВКМ_Руководитель</content>
+  <content>InformationRegister.ВКМ_СтавкиСотрудников</content>
+  <content>ScheduledJob.ВКМ_ОтправкаУведомленийТелеграмБоту</content>
+  <content>Catalog.ВКМ_ПрофилиГруппДоступа</content>
+  <content>CommonModule.ВКМ_УправлениеДоступом</content>
+  <content>CommonModule.ВКМ_УправлениеДоступомПереопределяемый</content>
+  <content>InformationRegister.ВКМ_ОчередьУведомлений</content>
+  <content>CommonModule.ВКМ_ТелеграмСервер</content>
+</mdclass:Subsystem>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34b71dc2-67af-47e6-8861-d357527ec01b">
+  <producedTypes>
+    <refType typeId="c30e9cac-c029-44ff-9203-4e662288217e" valueTypeId="917fef01-6272-4916-9b13-3715f3aa0bcf"/>
+    <listType typeId="0f99bf39-f9b3-4109-9b39-d83710b9841d" valueTypeId="7d1d2d71-4df2-4da9-98d0-7c75ee500cc2"/>
+    <managerType typeId="a74b09c6-a933-46ce-9422-102f9ab38157" valueTypeId="2f5d1855-015e-40c1-8426-630ac8b84b32"/>
+  </producedTypes>
+  <name>BKM_ВидыДоговоровКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>BKM виды договоров контрагентов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ca82cd17-e1cd-411f-bc9c-2070022c6b8a">
+    <name>BKM_Разовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>BKM разовый</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5dd90cd0-a12c-4d85-864d-5c227e5fd6a4">
+    <name>BKM_АбонентскоеОбслуживание</name>
+    <synonym>
+      <key>ru</key>
+      <value>BKM абонентское обслуживание</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
